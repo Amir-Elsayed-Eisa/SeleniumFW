@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTest">
+    <test verbose="2" preserve-order="true" name="C:/Users/amazon/IdeaProjects/SeleniumFW">
+        <classes>
+            <class name="tests.UserAccountRegistrationTestCases">
+                <methods>
+                    <include name="UserRegistrationSuccessfully"/>
+                    <include name="RegistrationFailedTC"/>
+                    <include name="UserLoginSuccessfully"/>
+                </methods>
+            </class>
+            <class name="tests.UserAccountTestCases">
+                <methods>
+                    <include name="ChangeUSerPasswordSuccessfully"/>
+                </methods>
+            </class>
+            <class name="tests.UserSearchAndAutocompleteSearchForProduct">
+                <methods>
+                    <include name="UserProductSearch"/>
+                </methods>
+            </class>
+            <class name="tests.UserSearchedAndAddedProductsToCart">
+                <methods>
+                    <include name="shoppingCartTC"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
