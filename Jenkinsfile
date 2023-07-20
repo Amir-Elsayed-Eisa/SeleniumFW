@@ -2,7 +2,7 @@ pipeline {
     try{
     notifyBuild('STARTED')
    stage('Preparation') {
-      git 'YOUR GITHUB REPOSOIRTY URL'
+      git 'https://github.com/Amir-Elsayed-Eisa/SeleniumFrameWork.git'
 
       mvnHome = tool 'MAVEN_HOME'
    }
