@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 public class LogInPage extends PageBase {
     public LogInPage(WebDriver driver) {
-        super(driver);
+        super((WebDriver) driver);
     }
 
     @FindBy(linkText = "Log in")
@@ -43,10 +43,9 @@ public class LogInPage extends PageBase {
         Assert.assertTrue(WelcomeMessage.getText().contains("Welcome to our store"));
 
 
-
-
-
-
+    }
+    public void userLogOut(){
+        LogOutLink.click();
     }
 
 }

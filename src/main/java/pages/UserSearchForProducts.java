@@ -14,7 +14,7 @@ import java.util.List;
 public class UserSearchForProducts extends PageBase{
 
     public UserSearchForProducts(WebDriver driver) {
-        super(driver);
+        super((WebDriver) driver);
     }
     PageBase PageOBJ;
 
@@ -31,7 +31,7 @@ public class UserSearchForProducts extends PageBase{
     List<WebElement> ListOfProducts;
 
     public void UserSearch(String SearchKeyWordsP1) {
-        PageOBJ = new PageBase(driver);
+        PageOBJ = new PageBase((WebDriver) driver);
 
         SearchBar.sendKeys(SearchKeyWordsP1);
         SearchButton.click();

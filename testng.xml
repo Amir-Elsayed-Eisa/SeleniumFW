@@ -3,24 +3,26 @@
 <suite name="SmokeTest">
     <test verbose="2" preserve-order="true" name="C:/Users/amazon/IdeaProjects/SeleniumFW">
         <classes>
-            <class name="tests.UserAccountRegistrationTestCases">
+
+
+            <class name="tests.TC101_RegistrationAndLogin">
                 <methods>
                     <include name="UserRegistrationSuccessfully"/>
                     <include name="RegistrationFailedTC"/>
                     <include name="UserLoginSuccessfully"/>
                 </methods>
             </class>
-            <class name="tests.UserAccountTestCases">
+            <class name="tests.TC102_UserAccountAndChangePassword">
                 <methods>
                     <include name="ChangeUSerPasswordSuccessfully"/>
                 </methods>
             </class>
-            <class name="tests.UserSearchAndAutocompleteSearchForProduct">
+            <class name="tests.TC103_SearchForProducts">
                 <methods>
                     <include name="UserProductSearch"/>
                 </methods>
             </class>
-            <class name="tests.UserSearchedAndAddedProductsToCart">
+            <class name="tests.TC104_Cart">
                 <methods>
                     <include name="shoppingCartTC"/>
                 </methods>

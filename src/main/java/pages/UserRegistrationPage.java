@@ -10,7 +10,7 @@ public class UserRegistrationPage extends PageBase {
 
 
     public UserRegistrationPage(WebDriver driver) {
-        super(driver);
+        super((WebDriver) driver);
 
     }
 
@@ -82,10 +82,11 @@ public class UserRegistrationPage extends PageBase {
         Password.sendKeys(UserPassword);
         ConfirmPassword.sendKeys(UserPassword);
         RegisterButton.click();
-
-
         Assert.assertTrue(SuccessfullyRegistered.getText().contains("Your registration completed"));
         ContinueToLogin.click();
+
+
+
 
 
     }

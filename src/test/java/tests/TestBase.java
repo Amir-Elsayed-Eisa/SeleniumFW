@@ -1,6 +1,5 @@
 package tests;
 
-import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,16 +10,7 @@ import org.testng.annotations.BeforeSuite;
 import utilities.Helper;
 
 public class TestBase{
-    Faker fake = new Faker();
-    String fName = String.valueOf(fake.name());
-    String lName = String.valueOf(fake.name());
-    String D = "1";
-    String M = "2";
-    String Y = "2000";
-    String email = String.valueOf(fake.internet().emailAddress());
-    String companyName = "I'm a student";
-    String password = "111111";
-    String newPassword = "222222";
+
     public static WebDriver driver;
 
     @BeforeSuite

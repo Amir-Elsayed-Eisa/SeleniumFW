@@ -13,7 +13,7 @@ import java.time.Duration;
 public class UserAccount extends PageBase{
 
     public UserAccount(WebDriver driver) {
-        super(driver);
+        super((WebDriver) driver);
     }
    @FindBy(linkText = "My account")
     WebElement MyAccount;
@@ -34,6 +34,8 @@ public class UserAccount extends PageBase{
     WebElement NotificationCloseButton;
     @FindBy(linkText = "Log out")
     WebElement LogOutLink;
+
+
 
     public void ChangeUSerPassword(String OldPass,String NewPass){
         MyAccount.click();
